@@ -19,7 +19,7 @@ namespace GitCandy.Git
             Contract.Requires(commit != null);
 
             this.commit = commit;
-            this.key = commit.Sha;
+            this.key = commit?.Sha;
         }
 
         protected override string GetCacheKey()
